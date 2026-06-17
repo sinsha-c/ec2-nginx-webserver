@@ -1,4 +1,4 @@
-# Nginx Web Server on AWS EC2
+# Nginx Server Setup on AWS EC2 (Amazon Linux, Ubuntu & Red Hat)
 
 > Deploying and automating Nginx across Amazon Linux, Ubuntu, and Red Hat EC2 instances using manual setup and EC2 User Data (Bash scripts).
 
@@ -18,7 +18,9 @@ Two approaches are covered:
 
 ---
 
-## Architecture
+## Architecture Diagram
+
+![Architecture Diagram](docs/architecture.png)
 
 ```
 Internet
