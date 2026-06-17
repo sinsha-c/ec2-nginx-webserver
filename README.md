@@ -1,10 +1,10 @@
-# 🌐 Nginx Web Server on AWS EC2
+# Nginx Web Server on AWS EC2
 
 > Deploying and automating Nginx across Amazon Linux, Ubuntu, and Red Hat EC2 instances using manual setup and EC2 User Data (Bash scripts).
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates how to set up and configure an **Nginx web server** on AWS EC2 instances running three different Linux distributions:
 
@@ -18,7 +18,7 @@ Two approaches are covered:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Internet
@@ -36,7 +36,7 @@ Internet
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 Before launching instances, complete the following in your AWS account:
 
@@ -49,7 +49,7 @@ Before launching instances, complete the following in your AWS account:
 
 ---
 
-## 🚀 Part 1: Manual Setup
+##  Part 1: Manual Setup
 
 ### Launch an EC2 Instance
 
@@ -124,7 +124,7 @@ You should see the **Nginx default welcome page**.
 
 ---
 
-## ⚡ Part 2: Automated Setup via EC2 User Data
+##  Part 2: Automated Setup via EC2 User Data
 
 Skip manual SSH entirely — Nginx installs and starts automatically when the instance boots.
 
@@ -175,7 +175,7 @@ systemctl start nginx
 
 ---
 
-## 📊 Command Reference Summary
+##  Command Reference Summary
 
 | Task | Amazon Linux / RHEL | Ubuntu |
 |------|---------------------|--------|
@@ -187,7 +187,7 @@ systemctl start nginx
 
 ---
 
-## 🎯 Expected Outcomes
+##  Expected Outcomes
 
 - ✅ Nginx is successfully running on **all three** Linux distributions
 - ✅ The default web page is accessible via the instance's **Public IP** in any browser
@@ -227,12 +227,12 @@ ec2-nginx-webserver/
 
 ---
 
-## 👤 Author
+##  Author
 
 **Sinsha** — [GitHub](https://github.com/sinsha-c)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
