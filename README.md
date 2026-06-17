@@ -124,8 +124,11 @@ You should see the **Nginx default welcome page**.
 | Ubuntu | "Welcome to nginx!" |
 | Red Hat | Red Hat Enterprise Linux Test Page |
 
----
+## Screeshots:
 
+![Amazon Linux Default Page](screenshots/amazon-linux-nginx.png) ![Ubuntu Default Page](screenshots/ubuntu-nginx.png) ![Red Hat Default Page](screenshots/redhat-nginx.png)
+
+---
 ##  Part 2: Automated Setup via EC2 User Data
 
 Skip manual SSH entirely — Nginx installs and starts automatically when the instance boots.
@@ -234,7 +237,3 @@ ec2-nginx-webserver/
 **Sinsha** — [GitHub](https://github.com/sinsha-c)
 
 ---
-
-##  License
-
-This project is open source and available under the [MIT License](LICENSE).
