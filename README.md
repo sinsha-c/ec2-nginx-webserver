@@ -250,6 +250,6 @@ ec2-nginx-webserver/
 
 ##  Author
 
-**Sinsha** — [GitHub](https://github.com/sinsha-c)
+**Sinsha C** — [GitHub](https://github.com/sinsha-c)
 
 ---
