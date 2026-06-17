@@ -248,12 +248,6 @@ ec2-nginx-webserver/
 
 ---
 
-## 📸 Screenshots
-
-> See the `/screenshots` folder for step-by-step visuals of the EC2 console, terminal output, and Nginx default pages across all three distributions.
-
----
-
 ##  Author
 
 **Sinsha** — [GitHub](https://github.com/sinsha-c)
