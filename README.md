@@ -19,9 +19,8 @@ Two approaches are covered:
 ---
 
 ## Architecture Diagram
-
 ![Architecture Diagram](docs/architecture.png)
-
+### Traffic Flow
 ```
 Internet
    │
@@ -35,7 +34,6 @@ Internet
                          [Nginx Server]
                          - Default Web Page
 ```
-
 ---
 
 ## Prerequisites
@@ -110,7 +108,11 @@ systemctl status nginx
 
 ### ✅ Verify — All Distributions
 
-After starting Nginx, copy the **Public IPv4 address** of the instance and open it in a browser:
+After starting Nginx verify nginx service is active and running
+#### Ubuntu nginx status for reference
+<img src="screenshots/ubuntu-nginx-status.png" width="450"/><br/>
+
+Then copy the **Public IPv4 address** of the instance and open it in a browser:
 
 ```
 http://<PUBLIC_IP_OF_INSTANCE>/
@@ -124,11 +126,25 @@ You should see the **Nginx default welcome page**.
 | Ubuntu | "Welcome to nginx!" |
 | Red Hat | Red Hat Enterprise Linux Test Page |
 
-## Screeshots:
+### 📸 Screenshots
 
-![Amazon Linux Default Page](screenshots/amazon-linux-nginx.png) ![Ubuntu Default Page](screenshots/ubuntu-nginx.png) ![Red Hat Default Page](screenshots/redhat-nginx.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/amazon-linux-nginx.png" width="300"/><br/>
+      <b>Amazon Linux</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/ubuntu-nginx.png" width="300"/><br/>
+      <b>Ubuntu</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/redhat-nginx.png" width="300"/><br/>
+      <b>Red Hat</b>
+    </td>
+  </tr>
+</table>
 
----
 ##  Part 2: Automated Setup via EC2 User Data
 
 Skip manual SSH entirely — Nginx installs and starts automatically when the instance boots.
@@ -143,6 +159,8 @@ Skip manual SSH entirely — Nginx installs and starts automatically when the in
 6. Click **Launch Instance**
 7. Once running, open `http://<PUBLIC_IP>/` in a browser
 
+#### Screenshot of user data page
+<img src="screenshots/ec2-user-data-page.png" width="500"/><br/>
 ---
 
 ### 1️⃣ Amazon Linux — User Data Script
@@ -210,9 +228,13 @@ ec2-nginx-webserver/
 │   ├── ubuntu-userdata.sh
 │   └── redhat-userdata.sh
 └── screenshots/
+    ├── ubuntu-nginx-status.png
     ├── amazon-linux-nginx.png
     ├── ubuntu-nginx.png
-    └── redhat-nginx.png
+    ├── redhat-nginx.png
+    └── ec2-user-data-page.png
+      
+     
 ```
 
 ---
